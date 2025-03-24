@@ -1,0 +1,179 @@
+/* Reset minimal et base */
+html{
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Importation de Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+  
+  body {
+    font-family: 'Merriweather', sans-serif;
+    line-height: 1.5;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 1rem;
+    padding-top: 5rem;
+  }
+
+  .contact-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: baseline;
+    gap: 0.7rem;
+  }
+
+
+  ul, li{
+    list-style-type: none;
+  }
+  
+  /* Structure de base */
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    padding-bottom: 2rem;
+  }
+  
+  .soft-skills>ul, .hobbies>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+  }
+
+  .box-underline{
+    border-bottom: 1px solid black;
+  }
+
+  .img-profil{
+    height: 6rem;
+    width: auto;
+  }
+
+  #top .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  }
+
+  #top .haut{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* Typographie de base */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  h1{
+    font-size: 1.476rem;
+  }
+
+  h2{
+    font-size: 1.383rem;
+  }
+  
+  h3{
+    font-size: 1.215rem;
+  }
+
+  h4{
+    font-size: 1.138rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Liens */
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Listes */
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Utilitaires flexbox */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .flex-row{
+    flex-direction: row;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  /* Espacement */
+  .mt-1 { margin-top: 0.25rem; }
+  .mt-2 { margin-top: 0.5rem; }
+  .mt-4 { margin-top: 1rem; }
+  .mt-8 { margin-top: 2rem; }
+  
+  .mb-1 { margin-bottom: 0.25rem; }
+  .mb-2 { margin-bottom: 0.5rem; }
+  .mb-4 { margin-bottom: 1rem; }
+  .mb-8 { margin-bottom: 2rem; }
+
+  .pb-4 {padding-bottom: 1rem;}
+  
+  /* Media query de base */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 16px;
+    }
+  }
