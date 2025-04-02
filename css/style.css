@@ -177,3 +177,91 @@ html{
       padding: 0 16px;
     }
   }
+
+  /* Améliorations responsive pour le site www.maxime-daon.fr */
+
+/* Règles existantes conservées, ajout uniquement des améliorations responsive */
+
+/* Responsive pour les écrans moyens */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .soft-skills > ul, .hobbies > ul {
+    flex-wrap: wrap;
+  }
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  
+  #top .haut {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .img-profil {
+    height: 5rem;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-date {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+  }
+}
+
+/* Ajout de règles pour la timeline et les expériences */
+.timeline-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline-date {
+  min-width: 120px;
+  font-weight: 500;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-header {
+  margin-bottom: 0.5rem;
+}
+
+.experience-tasks {
+  padding-left: 1.2rem;
+}
+
+/* Amélioration de l'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
